@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Spotify - Home</title>
+</head>
+
+<body class="bg-dark" id="bbody">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <img src="./logo3.png" alt="">
+
+                <h4 class="text-center fs-3"><a href="" class="fw-bold text-decoration-none text-white"><i
+                            class="fa fa-home"></i> Home</a></h4>
+                <h4 class="text-center fs-3 mt-4"><a href="" class="fw-bold text-decoration-none text-white"><i
+                            class="fa fa-search"></i> Search</a></h4>
+                <h4 class="text-center fs-3 mt-4"><a href="" class="fw-bold text-decoration-none text-white"><i
+                            class="fa fa-book"></i> Your Library</a></h4>
+                <hr>
+
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+                <h4>My Playlist</h4>
+
+
+            </div>
+
+            <div class="col-md-9 main">
+                <div class="navbar">
+                    <div class="playlist mt-5 fs-5" style="margin-top: 60px !important;">
+                        <div class="songs">
+                            <h1 class="fs-1 fw-bold text-white">Popular Songs</h1>
+                        </div>
+
+
+
+
+                        <!-- Card Carousel -->
+                        <div id="imageCardCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row g-3"> <!-- Added 'g-3' for spacing between cards -->
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('deva.mp3', 'Deva Deva.mp3', this)">
+                                                <img src="deva.jpg" class="card-img-top" alt="Image 1">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Repeat for other cards with appropriate song file names and image sources -->
+
+
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('omahi.mp3', 'Omahi.mp3', this)">
+                                                <img src="omaahi.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('bandeya.mp3', 'bandeya.mp3', this)">
+                                                <img src="./bandeya.jpg" class="card-img-top" alt="Image 3">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('Choo Lo.mp3', 'Choo Lo.mp3', this)">
+                                                <img src="chlo.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card"
+                                                onclick="playSong('amij ttomar.mp3', 'amij ttomar.mp3', this)">
+                                                <img src="ami j tomar.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('satranga.mp3', 'satranga.mp3', this)">
+                                                <img src="/satranga.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('apna.mp3', 'apna.mp3', this)">
+                                                <img src="apna.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Additional carousel-items can be added here -->
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#imageCardCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCardCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="songs">
+                            <h1 class="fs-1 fw-bold text-white mt-5">Jubin Nautiyal Best Songs</h1>
+                        </div>
+                        <div id="imageCardCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row g-3"> <!-- Added 'g-3' for spacing between cards -->
+                                        <div class="col">
+                                            <div class="card"
+                                                onclick="playSong('hare krishna.mp3', 'hare krishna.mp3', this)">
+                                                <img src="hare krishna.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('ma.mp3', 'ma.mp3', this)">
+                                                <img src="ma.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('krishna.mp3', 'krishna.mp3', this)">
+                                                <img src="krishna.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('bhagwan.mp3', 'bhagwan.mp3', this)">
+                                                <img src="bhagwan.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Additional carousel-items can be added here -->
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#imageCardCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCardCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="songs">
+                            <h1 class="fs-1 fw-bold text-white mt-5">Sanam Puri Special</h1>
+                        </div>
+                        <div id="imageCardCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row g-3"> <!-- Added 'g-3' for spacing between cards -->
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('a.mp3', 'a.mp3', this)">
+                                                <img src="mere.webp" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('gulabi.mp3', 'gulabi.mp3', this)">
+                                                <img src="./gulabi.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('mere.mp3', 'mere.mp3', this)">
+                                                <img src="./merisapno.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card" onclick="playSong('lagja.mp3', 'lagja.mp3', this)">
+                                                <img src="./laga.jpg" class="card-img-top" alt="Image 2">
+                                                <div class="playbutton">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!-- Additional carousel-items can be added here -->
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#imageCardCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCardCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="playsong">
+
+        <div class="progress-container">
+            <i class="fa fa-step-backward text-white fs-1 mx-2" onclick="prevSong()"></i>
+            <i class="fa fa-play-circle-o text-white mx-5 fs-1" id="playPauseBtn" onclick="togglePlayPause()"></i>
+            <i class="fa fa-step-forward text-white fs-1 mx-2" onclick="nextSong()"></i>
+            <div class="progress mx-5">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100" style="width:0%" id="songProgressBar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var currentAudio = null;
+        var currentSong = null;
+        var currentIcon = null;
+
+        function playSong(file, title, element) {
+            var icon = element.querySelector('.playbutton i');
+            var playPauseBtn = document.getElementById('playPauseBtn');
+
+            if (currentAudio && file !== currentSong) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                if (currentIcon) {
+                    currentIcon.className = 'fa fa-play'; // Reset previous icon to play
+                }
+                if (playPauseBtn) {
+                    playPauseBtn.className = 'fa fa-play-circle-o text-white mx-5 fs-1'; // Reset main play button
+                }
+
+                currentAudio = new Audio(file);
+                currentAudio.play()
+                    .then(() => {
+                        currentSong = file;
+                        currentIcon = icon;
+                        icon.className = 'fa fa-pause'; // Change icon to pause
+                        playPauseBtn.className = 'fa fa-pause-circle-o text-white mx-5 fs-1'; // Change main play button
+                        initializeProgressBar();
+                        console.log('Now playing:', title);
+                    })
+                    .catch(error => {
+                        console.error('Playback failed:', error);
+                    });
+                return;
+            }
+
+            if (currentAudio && file === currentSong) {
+                if (currentAudio.paused) {
+                    currentAudio.play();
+                    icon.className = 'fa fa-pause'; // Change to pause icon
+                    playPauseBtn.className = 'fa fa-pause-circle-o text-white mx-5 fs-1'; // Change main play button
+                    console.log('Resuming:', title);
+                } else {
+                    currentAudio.pause();
+                    icon.className = 'fa fa-play'; // Change to play icon
+                    playPauseBtn.className = 'fa fa-play-circle-o text-white mx-5 fs-1'; // Change main play button
+                    console.log('Paused:', title);
+                }
+                return;
+            }
+
+            if (!currentAudio) {
+                currentAudio = new Audio(file);
+                currentAudio.play()
+                    .then(() => {
+                        currentSong = file;
+                        currentIcon = icon;
+                        icon.className = 'fa fa-pause'; // Set icon to pause
+                        playPauseBtn.className = 'fa fa-pause-circle-o text-white mx-5 fs-1'; // Change main play button
+                        initializeProgressBar();
+                        console.log('Now playing:', title);
+                    })
+                    .catch(error => {
+                        console.error('Playback failed:', error);
+                    });
+            }
+        }
+
+        function togglePlayPause() {
+            if (!currentAudio) return; // Do nothing if no audio is loaded
+
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const currentCardIcon = currentIcon; // Icon on the card
+
+            if (currentAudio.paused) {
+                currentAudio.play();
+                playPauseBtn.className = 'fa fa-pause-circle-o text-white mx-5 fs-1'; // Change to pause icon
+                if (currentCardIcon) currentCardIcon.className = 'fa fa-pause'; // Update card icon
+            } else {
+                currentAudio.pause();
+                playPauseBtn.className = 'fa fa-play-circle-o text-white mx-5 fs-1'; // Change to play icon
+                if (currentCardIcon) currentCardIcon.className = 'fa fa-play'; // Update card icon
+            }
+        }
+
+        function initializeProgressBar() {
+            currentAudio.addEventListener('timeupdate', function () {
+                var percentage = (currentAudio.currentTime / currentAudio.duration) * 100;
+                document.getElementById('songProgressBar').style.width = percentage + '%';
+            });
+
+            currentAudio.addEventListener('ended', function () {
+                document.getElementById('playPauseBtn').className = 'fa fa-play-circle-o text-white mx-5 fs-1'; // Reset to play icon
+                document.getElementById('songProgressBar').style.width = '0%'; // Reset progress bar
+                currentAudio.currentTime = 0; // Optionally, you can move to next song
+            });
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
